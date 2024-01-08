@@ -10,3 +10,17 @@
 </head>
 
 <body>
+
+  <form action="{{ url_for('predict')}}" method="post">
+    <h1>Enter the Information Below and find if a Customer will Churn out or not</h1>
+    
+  <div class="contentform">
+    <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+      
+    <div class="leftcontact">
+          <div class="form-group">
+            <p>Credit Score<span>*</span></p>
+            <input name="CreditScore"  name="CreditScore" type="number" >
+              <div class="validation"></div>
+     </div> 
