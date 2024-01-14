@@ -28,3 +28,8 @@ def predict():
             Geography_Germany = 1
             Geography_Spain= 0
             Geography_France = 0
+            
+            elif(Geography_Germany == 'Spain'):
+            Geography_Germany = 0
+            Geography_Spain= 1
+            Geography_France = 0
