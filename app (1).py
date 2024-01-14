@@ -29,7 +29,18 @@ def predict():
             Geography_Spain= 0
             Geography_France = 0
             
-            elif(Geography_Germany == 'Spain'):
+        elif(Geography_Germany == 'Spain'):
             Geography_Germany = 0
             Geography_Spain= 1
             Geography_France = 0
+        else:
+            Geography_Germany = 0
+            Geography_Spain= 0
+            Geography_France = 1
+        Gender_Male = request.form['Gender_Male']
+        if(Gender_Male == 'Male'):
+            Gender_Male = 1
+            Gender_Female = 0
+        else:
+            Gender_Male = 0
+            Gender_Female = 1
