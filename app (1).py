@@ -51,3 +51,7 @@ def predict():
              return render_template('index.html',prediction_text="The Customer will leave the bank")
         else:
              return render_template('index.html',prediction_text="The Customer will not leave the bank")
+
+                
+if __name__=="__main__":
+    app.run(debug=True, port=8001)
