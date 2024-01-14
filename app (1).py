@@ -44,3 +44,5 @@ def predict():
         else:
             Gender_Male = 0
             Gender_Female = 1
+
+        prediction = model.predict([[CreditScore,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary,Geography_Germany,Geography_Spain,Gender_Male]])
