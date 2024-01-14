@@ -46,3 +46,8 @@ def predict():
             Gender_Female = 1
 
         prediction = model.predict([[CreditScore,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary,Geography_Germany,Geography_Spain,Gender_Male]])
+
+        if prediction==1:
+             return render_template('index.html',prediction_text="The Customer will leave the bank")
+        else:
+             return render_template('index.html',prediction_text="The Customer will not leave the bank")
